@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title></title>
+    <title>Jukebox</title>
 
   </head>
     <body>
