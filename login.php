@@ -1,3 +1,18 @@
+<?php
+
+if(isset($_POST['loginButton'])) {
+  // login button was pressed"
+  echo "login button was pressed";
+}
+
+if(isset($_POST['signupButton'])) {
+  // login button was pressed"
+  echo "signup button was pressed";
+}
+
+?>
+
+
 <html>
   <head>
     <title>Jukebox</title>
@@ -22,7 +37,7 @@
 
 <!-- signup -->
       <div id = "signupInputContainer">
-        <form id="signupForm" action="signup.php" method="POST">
+        <form id="signupForm" action="login.php" method="POST">
           <h2>Create an account</h2>
            <!-- username -->
           <div class="signupInput">
@@ -31,24 +46,24 @@
           </div>
           <!-- Firstname -->
           <div class="signupInput">
-          <label for= "firstName">Username</label>
+          <label for= "firstName">First Name</label>
           <input id="firstName" name="firstName" type="text" placeholder="Enter your First Name" required/>
           </div>
 
           <!-- lastname -->
 
           <div class="signupInput">
-          <label for= "lastName">Username</label>
+          <label for= "lastName">Last Name</label>
           <input id="lastName" name="lastName" type="text" placeholder="Enter your Last Name" required/>
           </div>
           <!-- email -->
           <div class="signupInput">
-          <label for= "signEmail">Username</label>
+          <label for= "signEmail">Email</label>
           <input id="signEmail" name="signEmail" type="email" placeholder="Enter your email" required/>
           </div>
           <!-- email Confirm-->
          <div class="signupInput">
-          <label for= "signEmailConfirm">Username</label>
+          <label for= "signEmailConfirm">Email Confirmation</label>
           <input id="signEmailConfirm" name="signEmailConfirm" type="email" placeholder="Enter your email" required/>
           </div>
 
@@ -60,7 +75,7 @@
           <!-- Password Confirmation -->
 
           <div class="signupInput">
-          <label for= "signupPasswordConfirm">Password</label>
+          <label for= "signupPasswordConfirm">Password Confirmation</label>
           <input id="signupPasswordConfirm" name="signupPasswordConfirm" type="password" placeholder="Confirm your Password" required/>
           </div>
 
