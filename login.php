@@ -1,17 +1,7 @@
 <?php
-
-if(isset($_POST['loginButton'])) {
-  // login button was pressed"
-  echo "login button was pressed";
-}
-
-if(isset($_POST['signupButton'])) {
-  // login button was pressed"
-  echo "signup button was pressed";
-}
-
+include("includes/handlers/signup-handler.php");
+include("includes/handlers/login-handler.php");
 ?>
-
 
 <html>
   <head>
